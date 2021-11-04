@@ -1,0 +1,25 @@
+/* Variable */
+:root {
+    /* Colors */
+    --color-orange: #de9228;
+    --color-light-grey: #dee2e3;
+    --color-dark-grey: #616161;
+    --dd-color-grey: #7e7d7d;
+    --highlight-grey: #E8EBEF;
+
+    /* Font Family */
+    --font-english: 'Rubik', sans-serif;
+    --font-korean: 'Noto Sans KR', sans-serif;
+  
+    /* Font Weight */
+    --total-weight-light: 300;
+    --total-weight-Regular: 400;
+  
+    /* English Weight */
+    --eng-weight-semi-bold: 600;
+    --eng-weight-bold: 800;
+  
+    /* Korean Weight */
+    --ko-weight-bold: 700;
+    --ko-weight-black: 900;
+}

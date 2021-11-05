@@ -35,7 +35,7 @@ aside {
 }
 aside nav {
   position: relative;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 aside nav .nav__times__toggle {
   display: none;
@@ -44,7 +44,7 @@ aside nav .nav__times__toggle {
   top: -60px;
   left: 150px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
   aside nav .nav__times__toggle {
     display: block;
   }
@@ -59,8 +59,32 @@ aside nav .navbar__logo .navbar__logo__h1 {
   color: #de9228;
   font-size: 35px;
 }
+aside nav .profile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+aside nav .profile__wrap .profile__img {
+  background: url(../images/profile.jpg) no-repeat center/cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+aside nav .profile__wrap .profile__class {
+  color: #7e7d7d;
+  font-weight: 300;
+  margin-top: -35px;
+}
 aside nav .navbar__list {
-  margin-top: 70px;
+  margin-left: 8px;
 }
 aside nav .navbar__list ul {
   display: -webkit-box;
@@ -89,7 +113,7 @@ aside nav .navbar__list ul li .nav-now {
   color: #de9228;
   border-bottom: 1px solid #de9228;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
   aside {
     -webkit-transform: translateX(-300px);
             transform: translateX(-300px);
@@ -118,7 +142,7 @@ aside nav .navbar__list ul li .nav-now {
   margin-top: 40px;
   margin-left: 40px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
   .mobile__nav__toggle button {
     display: block;
   }

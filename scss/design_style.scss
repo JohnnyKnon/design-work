@@ -73,7 +73,7 @@ aside{
             .navbar__logo__h1{
                 font-family: $font-eng;
                 font-weight: $font-eng-weight-bold;
-                color: $color-orange;
+                color: orange;
                 font-size: 35px;
             }
         }
@@ -98,26 +98,27 @@ aside{
         }    
         // Navbar Lists
         .navbar__list{
-            margin-left: 8px;
             ul{
                 display: flex;
                 flex-direction: column;
                 gap: 25px;
                 li{
                     a{
+                        padding: 4px 10px;
+                        border-radius: 5px      ;
                         font-family: $font-kor;
                         font-weight: $font-total-weight-regular;
                         font-size: 18px;
                         color: #000;
                         transition: all 200ms ease-in-out;
                         &:hover, &:focus{
-                            color: $color-orange;
-                            transition: all 200ms ease-in-out;
+                            background-color: $color-orange;
+                            color: $highlight-grey;
                         }
                     }
                     .nav-now{
-                        color: $color-orange;
-                        border-bottom: 1px solid $color-orange;
+                        background-color: orange;
+                        color: $highlight-grey;
                     }
                 }
             }

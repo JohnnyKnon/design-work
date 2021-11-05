@@ -56,7 +56,7 @@ aside nav .navbar__logo {
 aside nav .navbar__logo .navbar__logo__h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 800;
-  color: #de9228;
+  color: orange;
   font-size: 35px;
 }
 aside nav .profile__wrap {
@@ -83,9 +83,6 @@ aside nav .profile__wrap .profile__class {
   font-weight: 300;
   margin-top: -35px;
 }
-aside nav .navbar__list {
-  margin-left: 8px;
-}
 aside nav .navbar__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +94,8 @@ aside nav .navbar__list ul {
   gap: 25px;
 }
 aside nav .navbar__list ul li a {
+  padding: 4px 10px;
+  border-radius: 5px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -105,13 +104,12 @@ aside nav .navbar__list ul li a {
   transition: all 200ms ease-in-out;
 }
 aside nav .navbar__list ul li a:hover, aside nav .navbar__list ul li a:focus {
-  color: #de9228;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  background-color: #de9228;
+  color: #e8ebef;
 }
 aside nav .navbar__list ul li .nav-now {
-  color: #de9228;
-  border-bottom: 1px solid #de9228;
+  background-color: orange;
+  color: #e8ebef;
 }
 @media screen and (max-width: 1500px) {
   aside {

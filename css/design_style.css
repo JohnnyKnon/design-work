@@ -1,3 +1,181 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+aside {
+  z-index: 600;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #dee2e3;
+}
+aside nav {
+  position: relative;
+  margin-top: 80px;
+}
+aside nav .nav__times__toggle {
+  display: none;
+  position: absolute;
+  font-size: 25px;
+  top: -60px;
+  left: 150px;
+}
+@media screen and (max-width: 1600px) {
+  aside nav .nav__times__toggle {
+    display: block;
+  }
+}
+aside nav .navbar__logo {
+  position: relative;
+  left: 30px;
+}
+aside nav .navbar__logo .navbar__logo__h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  color: #de9228;
+  font-size: 35px;
+}
+aside nav .navbar__list {
+  margin-top: 70px;
+}
+aside nav .navbar__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+aside nav .navbar__list ul li a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+aside nav .navbar__list ul li a:hover, aside nav .navbar__list ul li a:focus {
+  color: #de9228;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+aside nav .navbar__list ul li .nav-now {
+  color: #de9228;
+  border-bottom: 1px solid #de9228;
+}
+@media screen and (max-width: 1600px) {
+  aside {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.mobile__nav__toggle {
+  position: fixed;
+  z-index: 500;
+}
+.mobile__nav__toggle button {
+  display: none;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+@media screen and (max-width: 1600px) {
+  .mobile__nav__toggle button {
+    display: block;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.title .title__h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #7e7d7d;
+  margin-top: 40px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+main table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main table thead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: orange;
+  border-radius: 8px;
+  padding: 15px 0;
+}
+main table thead tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 17px;
+}
+main table thead tr th {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  padding: 0px 12px;
+  letter-spacing: 2px;
+}
 
 /*# sourceMappingURL=design_style.css.map */

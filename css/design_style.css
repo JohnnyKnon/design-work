@@ -161,8 +161,58 @@ aside nav .navbar__list ul li .nav-now {
 }
 
 main {
-  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1400px;
   margin: auto;
+}
+main table {
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 1.5;
+  border-top: 1px solid #ccc;
+  margin: 20px 10px;
+}
+main table thead th {
+  width: 150px;
+  padding: 10px 5px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  color: #e8ebef;
+  background-color: #616161;
+}
+main table thead .product__name {
+  width: 1000px;
+  padding: 0px 50px;
+}
+main table tbody {
+  font-family: "Noto Sans KR", sans-serif;
+}
+main table tbody th {
+  width: 300px;
+  padding: 20px;
+}
+main table tbody td {
+  width: 350px;
+  padding: 10px;
+}
+main table tbody td button {
+  font-size: 16px;
+}
+main table tbody td select {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #7e7d7d;
+  border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+main table tbody tr:nth-of-type(even) {
+  background-color: #e8ebef;
 }
 
 /*# sourceMappingURL=design_style.css.map */

@@ -32,6 +32,8 @@ aside {
   width: 200px;
   height: 100vh;
   background-color: #dee2e3;
+  -webkit-box-shadow: 6px 1px 9px 2px #7e7d7d;
+          box-shadow: 6px 1px 9px 2px #7e7d7d;
 }
 aside nav {
   position: relative;
@@ -44,7 +46,7 @@ aside nav .nav__times__toggle {
   top: -60px;
   left: 150px;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   aside nav .nav__times__toggle {
     display: block;
   }
@@ -111,7 +113,7 @@ aside nav .navbar__list ul li .nav-now {
   background-color: orange;
   color: #e8ebef;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   aside {
     -webkit-transform: translateX(-300px);
             transform: translateX(-300px);
@@ -140,7 +142,7 @@ aside nav .navbar__list ul li .nav-now {
   margin-top: 40px;
   margin-left: 40px;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   .mobile__nav__toggle button {
     display: block;
   }
@@ -204,6 +206,7 @@ main table tbody td button {
   font-size: 16px;
 }
 main table tbody td select {
+  font-size: 15px;
   width: 100px;
   height: 30px;
   border: 1px solid #7e7d7d;

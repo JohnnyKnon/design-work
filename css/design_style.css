@@ -169,7 +169,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1400px;
+  position: relative;
+  max-width: 1300px;
   margin: auto;
 }
 main table {
@@ -186,17 +187,23 @@ main table thead th {
   font-weight: 700;
   color: #e8ebef;
   background-color: #616161;
+  letter-spacing: 2px;
 }
 main table thead .product__name {
-  width: 1000px;
+  width: 1500px;
   padding: 0px 50px;
 }
 main table tbody {
   font-family: "Noto Sans KR", sans-serif;
 }
 main table tbody th {
+  font-weight: 400;
+  font-size: 12.5px;
   width: 300px;
   padding: 20px;
+}
+main table tbody .tbody__product__name {
+  font-weight: 700;
 }
 main table tbody td {
   width: 350px;
@@ -216,6 +223,39 @@ main table tbody td select {
 }
 main table tbody tr:nth-of-type(even) {
   background-color: #e8ebef;
+}
+main .layerPopUp {
+  position: absolute;
+  width: 1200px;
+  height: 850px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 13px -4px #616161;
+          box-shadow: 5px 5px 13px -4px #616161;
+  opacity: 0;
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+main .layerPopUp .layerPopUp__times {
+  font-size: 30px;
+  color: #616161;
+  float: right;
+  margin: 10px 20px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+main .layerPopUp .layerPopUp__times:hover, main .layerPopUp .layerPopUp__times:focus {
+  color: #de9228;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+main .layer__event {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 /*# sourceMappingURL=design_style.css.map */

@@ -172,7 +172,8 @@ aside{
 main{
     display: flex;
     justify-content: center;
-    max-width: 1400px;
+    position: relative;
+    max-width: 1300px;
     margin: auto;
     
     table{
@@ -192,18 +193,25 @@ main{
                 font-weight: $font-kor-weight-bold;
                 color: $highlight-grey;
                 background-color: $color-dark-grey;
+                // Spacing
+                letter-spacing: 2px; 
 
             }
             .product__name{
-                width: 1000px;
+                width: 1500px;
                 padding: 0px 50px;
             }
         }
         tbody{
             font-family: $font-kor;
             th{
+                font-weight: $font-total-weight-regular;
+                font-size: 12.5px;
                 width: 300px;
                 padding: 20px;
+            }
+            .tbody__product__name{
+                font-weight: $font-kor-weight-bold;
             }
             td{
                 width: 350px;
@@ -225,5 +233,43 @@ main{
                 background-color: $highlight-grey;
             }
         }
+    }
+    
+    // Layer pop-up
+    .layerPopUp{
+        // position
+        position: absolute;
+        // sizing
+        width: 1200px;
+        height: 850px;
+        // box
+        background-color: #fff;
+        box-shadow: 5px 5px 13px -4px $color-dark-grey;
+        // opacity
+        opacity: 0;
+        // transform
+        transform: translateY(-1000px);
+        // transition
+        transition: all 400ms ease-in-out;
+        .layerPopUp__times{
+            // Font
+            font-size: 30px;
+            color: $color-dark-grey;
+            // position
+            float: right;
+            margin: 10px 20px;
+            // transition
+            transition:  all 200ms ease-in-out;
+            &:hover, &:focus{
+                color: $color-orange;
+                transition:  all 200ms ease-in-out;
+            }
+        }
+    }
+
+    .layer__event{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 400ms ease-in-out;
     }
 }

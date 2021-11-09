@@ -45,13 +45,14 @@
     <nav class="mobile__nav__toggle">
         <button class="nav__toggle"><i class="fas fa-bars"></i></button>
     </nav>
-    <!-- 주문일 순번 제품타입 제품명 진행사항 담당디자이너 상세보기 견적서 삭제 수정 -->
     <!-- Main -->
     <header class="title">
         <h1 class="title__h1">작업관리</h1>
     </header>
     <main>
+        <!-- Table -->
         <table class="work__ctrl">
+            <!-- thead -->
             <thead>
                 <tr>
                     <th scope="col">주문일</th>
@@ -66,12 +67,13 @@
                     <th scope="col" class="work__buttons">수정</th>
                 </tr>
             </thead>
+            <!-- tbody -->
             <tbody>
                 <tr>
                     <th scope="row">2021-11-08</th>
                     <td>1876</td>
                     <td>명함</td>
-                    <td>직원 명함 (정태훈)</td>
+                    <td class="tbody__product__name">직원 명함 (정태훈)</td>
                     <td>
                         <select name="proceedings">
                             <option value="">진행사항</option>
@@ -94,7 +96,7 @@
                             <option>김정미</option>            
                         </select>
                     </td>
-                    <td><button><i class="fas fa-search"></i></button></td>
+                    <td><button class="detail"><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-trash"></i></button></td>
                     <td><button><i class="fas fa-edit"></i></button></td>
@@ -103,7 +105,7 @@
                     <th scope="row">2021-11-08</th>
                     <td>1876</td>
                     <td>명함</td>
-                    <td>직원 명함 (정태훈)</td>
+                    <td class="tbody__product__name">직원 명함 (정태훈)</td>
                     <td>
                         <select name="proceedings">
                             <option value="">진행사항</option>
@@ -126,7 +128,7 @@
                             <option>김정미</option>            
                         </select>
                     </td>
-                    <td><button><i class="fas fa-search"></i></button></td>
+                    <td><button class="detail"><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-trash"></i></button></td>
                     <td><button><i class="fas fa-edit"></i></button></td>
@@ -135,7 +137,7 @@
                     <th scope="row">2021-11-08</th>
                     <td>1876</td>
                     <td>명함</td>
-                    <td>직원 명함 (정태훈)</td>
+                    <td class="tbody__product__name">직원 명함 (정태훈)</td>
                     <td>
                         <select name="proceedings">
                             <option value="">진행사항</option>
@@ -158,7 +160,7 @@
                             <option>김정미</option>            
                         </select>
                     </td>
-                    <td><button><i class="fas fa-search"></i></button></td>
+                    <td><button class="detail"><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-trash"></i></button></td>
                     <td><button><i class="fas fa-edit"></i></button></td>
@@ -167,7 +169,7 @@
                     <th scope="row">2021-11-08</th>
                     <td>1876</td>
                     <td>명함</td>
-                    <td>직원 명함 (정태훈)</td>
+                    <td class="tbody__product__name">직원 명함 (정태훈)</td>
                     <td>
                         <select name="proceedings">
                             <option value="">진행사항</option>
@@ -190,13 +192,20 @@
                             <option>김정미</option>            
                         </select>
                     </td>
-                    <td><button><i class="fas fa-search"></i></button></td>
+                    <td><button class="detail"><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-search"></i></button></td>
                     <td><button><i class="fas fa-trash"></i></button></td>
                     <td><button><i class="fas fa-edit"></i></button></td>
                 </tr>
             </tbody>
         </table>
+        <!-- Layer pop-up -->
+        <section class="layerPopUp">    
+            <button class="layerPopUp__times"><i class="fas fa-times"></i></button>
+            <div class="">
+                
+            </div>
+        </section>
     </main>
 </body>
 </html>

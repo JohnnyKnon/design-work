@@ -172,11 +172,35 @@ aside{
 // Main
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     position: relative;
     max-width: 1300px;
     margin: auto;
-    
+// Search
+    .search__section{
+        // position
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        label, select, input{
+            margin: 0 4px;    
+            font-family: $font-kor;   
+        }
+        #search__select{
+            border: 0;
+            border-bottom: 1px solid $color-grey;
+        }
+        #search{
+            border: 0;
+            border-bottom: 1px solid $color-grey;
+        }
+        button{
+            margin-right: 20px;
+        }
+    }
+// Table
     table{
         border-collapse: collapse;
         text-align: center;
@@ -187,7 +211,7 @@ main{
         thead{
             th{
                 // Size
-                width: 150px;
+                width: 500px;
                 padding: 10px 5px;
                 // font
                 font-family: $font-kor;
@@ -196,11 +220,13 @@ main{
                 background-color: $color-dark-grey;
                 // Spacing
                 letter-spacing: 2px; 
-
             }
             .product__name{
-                width: 1500px;
+                width: 3000px;
                 padding: 0px 50px;
+            }
+            .work__buttons__title{
+                width: 20px;
             }
         }
         tbody{

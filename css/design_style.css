@@ -166,12 +166,41 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
   position: relative;
   max-width: 1300px;
   margin: auto;
+}
+main .search__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .search__section label, main .search__section select, main .search__section input {
+  margin: 0 4px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+main .search__section #search__select {
+  border: 0;
+  border-bottom: 1px solid #7e7d7d;
+}
+main .search__section #search {
+  border: 0;
+  border-bottom: 1px solid #7e7d7d;
+}
+main .search__section button {
+  margin-right: 20px;
 }
 main table {
   border-collapse: collapse;
@@ -181,7 +210,7 @@ main table {
   margin: 20px 10px;
 }
 main table thead th {
-  width: 150px;
+  width: 500px;
   padding: 10px 5px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
@@ -190,8 +219,11 @@ main table thead th {
   letter-spacing: 2px;
 }
 main table thead .product__name {
-  width: 1500px;
+  width: 3000px;
   padding: 0px 50px;
+}
+main table thead .work__buttons__title {
+  width: 20px;
 }
 main table tbody {
   font-family: "Noto Sans KR", sans-serif;

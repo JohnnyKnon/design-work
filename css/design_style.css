@@ -27,7 +27,7 @@ button {
 
 aside {
   z-index: 600;
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 200px;
   height: 100vh;
@@ -258,8 +258,8 @@ main table tbody tr:nth-of-type(even) {
 }
 main .layerPopUp {
   position: absolute;
-  width: 1200px;
-  height: 850px;
+  width: 100%;
+  height: 100vh;
   background-color: #fff;
   -webkit-box-shadow: 5px 5px 13px -4px #616161;
           box-shadow: 5px 5px 13px -4px #616161;

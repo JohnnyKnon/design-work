@@ -47,7 +47,7 @@ button {
 // Nav part Aside
 aside{
     z-index: 600;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 200px;
     height: 100vh;
@@ -267,8 +267,8 @@ main{
         // position
         position: absolute;
         // sizing
-        width: 1200px;
-        height: 850px;
+        width: 100%;
+        height: 100vh;
         // box
         background-color: #fff;
         box-shadow: 5px 5px 13px -4px $color-dark-grey;

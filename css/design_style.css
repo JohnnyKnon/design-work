@@ -202,14 +202,14 @@ main .search__section #search {
 main .search__section button {
   margin-right: 20px;
 }
-main table {
+main .work__ctrl {
   border-collapse: collapse;
   text-align: center;
   line-height: 1.5;
   border-top: 1px solid #ccc;
   margin: 20px 10px;
 }
-main table thead th {
+main .work__ctrl thead th {
   width: 500px;
   padding: 10px 5px;
   font-family: "Noto Sans KR", sans-serif;
@@ -218,33 +218,33 @@ main table thead th {
   background-color: #616161;
   letter-spacing: 2px;
 }
-main table thead .product__name {
+main .work__ctrl thead .product__name {
   width: 3000px;
   padding: 0px 50px;
 }
-main table thead .work__buttons__title {
+main .work__ctrl thead .work__buttons__title {
   width: 20px;
 }
-main table tbody {
+main .work__ctrl tbody {
   font-family: "Noto Sans KR", sans-serif;
 }
-main table tbody th {
+main .work__ctrl tbody th {
   font-weight: 400;
   font-size: 12.5px;
   width: 300px;
   padding: 20px;
 }
-main table tbody .tbody__product__name {
+main .work__ctrl tbody .tbody__product__name {
   font-weight: 700;
 }
-main table tbody td {
+main .work__ctrl tbody td {
   width: 350px;
   padding: 10px;
 }
-main table tbody td button {
+main .work__ctrl tbody td button {
   font-size: 16px;
 }
-main table tbody td select {
+main .work__ctrl tbody td select {
   font-size: 15px;
   width: 100px;
   height: 30px;
@@ -253,7 +253,7 @@ main table tbody td select {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
 }
-main table tbody tr:nth-of-type(even) {
+main .work__ctrl tbody tr:nth-of-type(even) {
   background-color: #e8ebef;
 }
 main .layerPopUp {
@@ -281,6 +281,30 @@ main .layerPopUp .layerPopUp__times:hover, main .layerPopUp .layerPopUp__times:f
   color: #de9228;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+}
+main .layerPopUp .top__table__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .layerPopUp .top__table__section .top__table__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .layerPopUp .top__table__section .top__table {
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+  line-height: 1.5;
+  margin: 20px 10px;
 }
 main .layer__event {
   -webkit-transform: translateY(0);

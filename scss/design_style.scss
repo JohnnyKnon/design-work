@@ -201,7 +201,7 @@ main{
         }
     }
 // Table
-    table{
+    .work__ctrl{
         border-collapse: collapse;
         text-align: center;
         line-height: 1.5;
@@ -290,6 +290,27 @@ main{
             &:hover, &:focus{
                 color: $color-orange;
                 transition:  all 200ms ease-in-out;
+            }
+        }
+        .top__table__section{
+            display: flex;
+            justify-content: center;
+            
+            .top__table__wrap{
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .top__table{
+                border-collapse: separate;
+                border-spacing: 0;
+                text-align: left;
+                line-height: 1.5;
+                margin : 20px 10px;
+                
+                tr{
+                    
+                }
             }
         }
     }
